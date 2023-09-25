@@ -6,12 +6,14 @@ import MainBlock from '@/components/MainBlock/MainBlock';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+
   return (
     <main
-      className={'flex  flex-col items-center justify-between pt-20 px-48 bg-backgroundWhite'}
+      className={'flex flex-col items-center justify-center xs:pt-4 md:pt-20 xs:px-2 md:px-48 bg-backgroundWhite'}
     >
-      <Header/>
-      <MainBlock/>
+      <Header />
+      <MainBlock />
 
       
       

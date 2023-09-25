@@ -27,7 +27,10 @@ module.exports = {
       },
       fontSize: {
         body: "15px"
-      }
+      },
+      screens: {
+        'xs': '345px', // Definir un tamaño de pantalla muy pequeño
+      },
     },
   },
   plugins: [],
