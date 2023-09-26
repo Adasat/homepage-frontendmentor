@@ -17,7 +17,7 @@ function MainBlock() {
   return (
     <div className="flex xs:flex-col md:flex-row md:justify-center md:items-start xs:items-center w-full ">
       <div className="flex flex-col  xs:w-full xs:mr-0 md:mr-10">
-        {widthScreen <= '400' ? (
+        {widthScreen <= 400 ? (
           <Image src={imgMobile} alt="Imagen de Home" className="w-full mb-5" />
         ) : (
           <Image
