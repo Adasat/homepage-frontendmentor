@@ -28,7 +28,9 @@ module.exports = {
         '800': 800
       },
       fontSize: {
-        body: "15px"
+        body: "20px",
+        title: '80px',
+        subheading: '24px'
       },
       screens: {
         'xs': '340px', // Definir un tamaño de pantalla muy pequeño

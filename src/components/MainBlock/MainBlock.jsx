@@ -27,22 +27,22 @@ function MainBlock() {
           />
         )}
         <div className="flex xs:flex-col md:flex-row w-full">
-          <div className="xs:text-5xl md:text-5xl font-800 font-fuente md:pr-5 md:w-2/4 xs:my-2">
+          <div className="xs:text-5xl md:text-title md:p-5 font-800 font-fuente md:pr-5 md:w-2/4 xs:my-2">
             <p>The Bright Future of Web 3.0? </p>
           </div>
           <div className="flex flex-col md:w-2/4 md:justify-between  gap-5">
-            <p className="text-body md:text-body text-DarkGrayishBlue mx-2">
+            <p className="text-body md:text-subheading md:mt-4 text-DarkGrayishBlue mx-2">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button className="bg-SoftRed p-2 text-backgroundWhite text-body font-700 font-fuente w-2/4 border-1 border-black tracking-widest xs:mb-10">
+            <button className="bg-SoftRed p-4 text-backgroundWhite text-body font-700 font-fuente w-2/4 border-1 border-black tracking-widest xs:mb-10">
               READ MORE
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:w-3/6 bg-VeryDarkBlue text-white font-fuente p-5">
+      <div className="flex flex-col md:w-2/6 bg-VeryDarkBlue text-white text-body font-fuente p-5">
         <p className="text-SoftOrange font-bold text-4xl mb-5">New</p>
         <p className="text-backgroundWhite font-bold text-lg mb-1">
           Hydrogen VS Electric Cars
