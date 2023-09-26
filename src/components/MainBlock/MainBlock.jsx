@@ -15,14 +15,10 @@ function MainBlock() {
   const widthScreen = useWindowWidth()
 
   return (
-    <div className="flex xs:flex-col xs:justify-center xs:items-center xs:w-full w-full  md:flex-row ">
-      <div className="flex flex-col xs:justify-center items-center xs:w-screen md:w-7/8 xs:mr-0 md:mr-12">
-        {widthScreen <= "500" ? (
-          <Image
-            src={imgMobile}
-            alt="Imagen de Home"
-            className="w-full self-center mb-5"
-          />
+    <div className="flex xs:flex-col md:flex-row md:justify-center md:items-start xs:items-center w-full ">
+      <div className="flex flex-col  xs:w-full xs:mr-0 md:mr-10">
+        {widthScreen <= '400' ? (
+          <Image src={imgMobile} alt="Imagen de Home" className="w-full mb-5" />
         ) : (
           <Image
             src={imgDesktop}
@@ -31,22 +27,22 @@ function MainBlock() {
           />
         )}
         <div className="flex xs:flex-col md:flex-row w-full">
-          <p className="text-6xl font-800 font-fuente p-2 ">
-            The Bright Future of Web 3.0?{" "}
-          </p>
-          <div className="flex flex-col justify-between p-5">
-            <p className="text-body lg:text-xl text-DarkGrayishBlue mx-2">
+          <div className="xs:text-5xl md:text-5xl font-800 font-fuente md:pr-5 md:w-2/4 xs:my-2">
+            <p>The Bright Future of Web 3.0? </p>
+          </div>
+          <div className="flex flex-col md:w-2/4 md:justify-between  gap-5">
+            <p className="text-body md:text-body text-DarkGrayishBlue mx-2">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button className="bg-SoftRed p-2 text-backgroundWhite text-body font-700 font-fuente xs:w-full md:w-2/4 border-1 border-black tracking-widest">
+            <button className="bg-SoftRed p-2 text-backgroundWhite text-body font-700 font-fuente w-2/4 border-1 border-black tracking-widest xs:mb-10">
               READ MORE
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-VeryDarkBlue text-white font-fuente p-5">
+      <div className="flex flex-col md:w-3/6 bg-VeryDarkBlue text-white font-fuente p-5">
         <p className="text-SoftOrange font-bold text-4xl mb-5">New</p>
         <p className="text-backgroundWhite font-bold text-lg mb-1">
           Hydrogen VS Electric Cars

@@ -2,34 +2,26 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header/Header';
 import MainBlock from '@/components/MainBlock/MainBlock';
+import NewsFooter from '@/components/NewsFooter/NewsFooter';
+import Attribution from '@/components/Attribution/Attribution';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
 
   return (
     <main
-      className={'flex flex-col items-center justify-center xs:pt-4 md:pt-20 xs:px-2 md:px-48 bg-backgroundWhite'}
+      className={'flex flex-col  xs:items-center xs:p-4 justify-center xs:pt-4 md:pt-12 xs:px-2 md:px-28 bg-backgroundWhite'}
     >
       <Header />
       <MainBlock />
-
+      <NewsFooter/>
+       <Attribution/>
+ 
       
       
-      01 Reviving Retro PCs What happens when old PCs are given
-      modern upgrades? 
-      02 Top 10 Laptops of 2022 Our best picks for various
-      needs and budgets. 
-      03 The Growth of Gaming How the pandemic has sparked
-      fresh opportunities.
-      <div class="attribution">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+     
+      
     </main>
   );
 }

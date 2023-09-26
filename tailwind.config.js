@@ -1,5 +1,7 @@
 const { Inter } = require('next/font/google');
 
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,7 +20,7 @@ module.exports = {
         SoftRed: "hsl(5, 85%, 63%)"
       },
       fontFamily: {
-        'fuente': [Inter]
+        fuente: ['Inter', 'sans-serif']
       },
       fontWeight:  {
         '400': 400,
@@ -29,7 +31,7 @@ module.exports = {
         body: "15px"
       },
       screens: {
-        'xs': '345px', // Definir un tamaño de pantalla muy pequeño
+        'xs': '340px', // Definir un tamaño de pantalla muy pequeño
       },
     },
   },
